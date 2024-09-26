@@ -23,3 +23,11 @@ git commit --amend -m "Updated commit message"
 "Content for file 1" | Out-File “C:\Users\mehak\OneDrive\Desktop\Sem 4\powershell\lab3/file1.txt"
 "Content for file 2" | Out-File “C:\Users\mehak\OneDrive\Desktop\Sem 4\powershell\lab3/file2.txt" 
 git add .
+git commit -m "Added file1.txt and file2.txt"
+git reset --soft HEAD~
+git reset -- file2.txt
+git add “C:\Users\mehak\OneDrive\Desktop\Sem 4\powershell\lab3/file1.txt"
+git commit -m "Added file1.txt only"
+"Content to be reverted" | Out-File “C:\Users\mehak\OneDrive\Desktop\Sem 4\powershell\lab3/revert.txt"
+git add “C:\Users\mehak\OneDrive\Desktop\Sem 4\powershell\lab3/revert.txt"
+git commit -m "Commit with revert.txt"
